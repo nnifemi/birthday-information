@@ -14,13 +14,14 @@ body {
 
 .input-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: baseline;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #birthdayInput {
@@ -31,6 +32,14 @@ label {
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-right: 10px;
+    height: 24px;
+    width: 28vh; 
+}
+
+label {
+    display: block;
+    margin-top: 10px;
 }
 
 button {
@@ -41,8 +50,8 @@ button {
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    align-self: baseline;
+    height: 40px;
 }
 
 button:hover {
@@ -52,8 +61,22 @@ button:hover {
 #resultContainer {
     margin-top: 20px;
     padding: 20px;
-    border: 1px solid #61dafb;
+    border: none;
     border-radius: 5px;
+    display: none;
+    height: 160px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left; 
+}
+
+#resultContainer p {
+    margin: 14px;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,6 +94,6 @@ button:hover {
     }
 
     #resultContainer {
-        border: 1px solid #1e1e1e;
+        background-color: #0000005a;
     }
 }
