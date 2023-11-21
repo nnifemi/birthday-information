@@ -66,6 +66,7 @@ button:hover {
     display: none;
     height: 160px;
     width: 300px;
+    display: none;
     display: flex;
     flex-direction: column;
     align-items: left;
