@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+body {
+    background-color: #282c34;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+#birthdayInput {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #394046;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+button:hover {
+    background-color: #4fa3d1;
+}
+
+#resultContainer {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #ffffff;
+    }
+
+    button {
+        background-color: #1976D2;
+    }
+
+    button:hover {
+        background-color: #1565C0;
+    }
+
+    #resultContainer {
+        border: 1px solid #1e1e1e;
+    }
+}
