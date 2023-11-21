@@ -77,7 +77,7 @@ class BirthdayChecker {
       } else {
           resultContainer.innerHTML = '<p>Please enter a valid date (dd-mm-yyyy).</p>';
           // Hide the result container
-          resultContainer.style.display = 'block';
+          resultContainer.style.display = 'none';
       }
   }
 
